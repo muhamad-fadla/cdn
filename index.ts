@@ -37,7 +37,7 @@ server.register(FastifyStatic, {
 });
 
 
-server.listen(process.env.PORT || 8080/**, "0.0.0.0" */, (err, address) => {
+server.listen(process.env.PORT || 8080, "0.0.0.0", (err, address) => {
   if (err) {
     console.error(err);
     process.exit(1);
